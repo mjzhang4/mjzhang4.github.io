@@ -1,0 +1,30 @@
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+    padding: 20px;
+  }
+      
+.nav-wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    background-color: #fafafa;
+    text-decoration-color: black;
+    text-emphasis-color: black;
+
+
+}
+nav ul li a{
+  color: black;
+}    
+.brand-logo-left{
+    color: black
+}
+
+.page-footer{
+    background-color: #fafafa;
+}
