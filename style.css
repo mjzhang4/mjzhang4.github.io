@@ -27,4 +27,15 @@ nav ul li a{
 
 .page-footer{
     background-color: #fafafa;
+    
+}
+
+nav ul li.active {
+  background-color: #64b5f6;
+} 
+
+img {
+   max-width:100%;
+   height:auto;
+   max-height:100%;
 }
