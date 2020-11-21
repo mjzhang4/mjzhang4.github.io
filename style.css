@@ -34,8 +34,10 @@ nav ul li.active {
   background-color: #64b5f6;
 } 
 
-img {
-   max-width:100%;
+img.medium{
+   max-width: 70%;
    height:auto;
    max-height:100%;
 }
+
+.card-backgroun
