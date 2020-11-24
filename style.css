@@ -6,7 +6,8 @@
 
   main {
     flex: 1 0 auto;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
       
 .nav-wrapper {
@@ -42,8 +43,26 @@ img.medium{
 
 h1{
     margin: 0px;
+    padding: 0px;
 }
 
 p{
     font-size: 18px;
+}
+.padded-text{
+    margin-top: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.parallax-container{
+    height: 350px;
+}
+#portrait{
+    float: right;
+    width: 250px;
+    border-radius: 50%;
+    margin-left: 2%;
+}
+.recent-projects{
+    margin-top: 5%
 }
