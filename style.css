@@ -66,3 +66,9 @@ p{
 .recent-projects{
     margin-top: 5%
 }
+.card-medium{
+    height: 400;
+}
+#project-cards{
+    margin-top:2%
+}
