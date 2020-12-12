@@ -67,6 +67,15 @@
       margin-left: 2%;
   }
 
+#toaster-img{
+    float: right;
+    width: 400px;
+}
+#toaster-explode{
+    float: right;
+    width: 400px;
+}
+
   .recent-projects {
       margin-top: 5%
   }

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.sidenav').sidenav();
+            $('.parallax').parallax();
+        });
+
+    </script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Matthew's Site</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo left black-text">Matthew Zhang</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons grey-text">menu</i></a>
+
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.pdf">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.pdf">Resume</a></li>
+    </ul>
+    <main>
+        <div class="parallax-container">
+            <div class="parallax"><img src="images/toasterrender.png" class=responsive-img></div>
+        </div>
+
+        <div class="padded-text">
+            <img src=images/toaster.png id=toaster-img>
+            <h1>ME170 Toaster</h1>
+            <p> In our ME170 class, we learned Computer Aided Design in Fusion360, creating assembly and part drawings according to ANSI standards, and various design for manufacturing concepts. These all culminated in our semester long project where I worked in a group to design, plan, and cost a consumer product of our own invention. My group's solution was <strong>The Breadwinner</strong>: a toaster that traps heat inside better resulting in faster toasting times.
+            </p>
+            <h4>Human Centered Design</h4>
+            <p> Our idea came to life after interviewing many middle-aged adults, and we identified that speed and efficiency was an important factor for appliciances to them because of their usually busy lives. From this insight we sought to create a toaster that utilized heat more efficiently to toast bread cripser and faster.
+            </p>
+            <h4>Features</h4>
+            <p> The Breadwinner's main feature is 2 trays that move up and down and are designed to have bread placed in them. Once the bread is in and the button is pushed down, the tops of the trays keep the heat inside the toaster, and also help to contain any bread crumbs from the bread. The toaster is intuitive to use, as it is very similar to a traditional toaster, and it sports a sleek but understated white and black color scheme with a splash of color on the logo.
+            </p>
+            <img src=images/toasterexplode.png id=toaster-explode>
+            <h4>Parts and Manufacturability</h4>
+            <p> The parts that make up the Breadwinner are intended to primarially be manufactured using ABS injection molding or steel sheet metal progressive die stamping processes. These processes are ideal for a consumer product like this one because they are intended for high volume production. 
+            </p>
+            <p>The Breadwinner consists of 2 major components: the outer injection molded shell, and stamped sheet metal internals. The outer shell is ABS plastic for a nicer finish and a curved ergonomic shape, while the internals use primarially steel because of the heat inside the toaster, and the ability to add folds and bends to the internal frame lends a large amount of extra strength to the internal assembly. Many of the parts of the toaster are assembled using standard M2 hardware, meaning that the parts can be reliably sourced.
+            </p>
+            <h4>Personal Contribution</h4>
+            <p>
+            This project was certainly a group effort, but in terms of my individual contribution, I helped to design most of the internal sheet metal structure including the frame, as well as the sliding carriage that holds both of the trays, and the injection molded button on the front that mounts to the carriage. For all of these parts that I created, I made dimensioned part drawings, and also used the apriori software to generate a rough cost analysis for the parts.
+            </p>
+            <h4>Report</h4>
+            <p>
+                Our final report with more details about our design can be found here: <a href="toasterreport.pdf">Report</a>
+            </p>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="black-text">Matthew Zhang</h5>
+                    <p class="grey-text text-darken-3">University of Illinois at Urbana Champaign<br>
+                        Class of 2024 <br>
+                        Mechanical Engineering
+                    </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="black-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-darken-2" href="https://www.linkedin.com/in/matthew-zhang-5b26961b0/" target="_blank">LinkedIn</a></li>
+                        <li><a class="grey-text text-darken-2" href="https://github.com/mjzhang4" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey-text">
+            <div class="container">
+                © Matthew Z 2020
+            </div>
+        </div>
+    </footer>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+</html>
