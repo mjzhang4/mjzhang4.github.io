@@ -67,14 +67,15 @@
       margin-left: 2%;
   }
 
-#toaster-img{
-    float: right;
-    width: 400px;
-}
-#toaster-explode{
-    float: right;
-    width: 400px;
-}
+  #toaster-img {
+      float: right;
+      width: 400px;
+  }
+
+  #toaster-explode {
+      float: right;
+      width: 400px;
+  }
 
   .recent-projects {
       margin-top: 5%
@@ -93,4 +94,13 @@
       text-decoration: none;
       background-color: none;
 
+  }
+
+  #game-video {
+      float: right;
+  }
+
+  .center-video {
+      display: flex;
+      justify-content: center;
   }
