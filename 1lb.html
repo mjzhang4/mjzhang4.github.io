@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.sidenav').sidenav();
+            $('.parallax').parallax();
+            $('.materialboxed').materialbox();
+        });
+    </script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Matthew's Site</title>
+</head>
+
+    
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo left black-text">Matthew Zhang</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons grey-text">menu</i></a>
+
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="active"><a href="projects.html">Projects</a></li>
+                <li><a href="resume.pdf">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="active"><a href="projects.html">Projects</a></li>
+        <li><a href="resume.pdf">Resume</a></li>
+    </ul>
+    <main>
+
+        <div class="padded-text">
+            <h1>1lb 3D Printed Combat Robot: "Spinna Dubs"</h1>
+            <p class="larger"> The University of Illinois at Urbana-Champaign iRobotics club hosts a 1-lb 3D printed robot combat competition several times a semester. <strong>A friend and I designed and competed with "Spinna Dubs": an agile, hard-hitting, and destructive robot with a high kinetic-energy vertical spinning weapon. I focused on designing our robot's chassis and frame, while my partner worked on the weapon subsystem.</strong> 
+            </p>
+ 
+
+            <div style="width:50%;float:left">            
+                <img src="images/1lb Render.png" style="width:100%" alt="" class="materialboxed">
+                <center><p class=dark-grey-text><i>A computer rendering of the robot</i></p></center>
+            </div>
+            <div style="width:50%;float:left">            
+                <img src="images/spinnadubs.gif" style="width:100%" alt="">
+                <center><p class=dark-grey-text><i>Spinna Dubs tears off another robot's saw weapon</i></p></center>
+            </div>
+          
+            <center>
+                <iframe width=1000px height=600px src="https://www.youtube.com/embed/videoseries?list=PLEu_-SbFOVvJ3u3RhecnkEGJHP5bosb2H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </center>
+            <center>
+                <p class=dark-grey-text><i>Youtube playlist of all matches (Use arrows next to pause button to change videos)</i></p> 
+            </center>
+            <h2>Technical Details</h2>
+            <h3>Chassis</h3>
+            <div class="row">
+            <div style="width:50%;float:left">            
+                <img src="images/1lb chassis.png" style="width:90%; float:center" alt="" class="materialboxed">
+                <center><p class=dark-grey-text><i>3D printed unibody chassis</i></p></center>
+            </div>
+            <div style="width:50%;float:right">   
+                <p class=dark-grey-text>Our initial goals for the chassis were to design it to be as wide as possible to prevent <a href="https://youtu.be/9pZe_VS3zkI?t=3">"gyro dancing"</a> due to gyroscopic procession from the weapon when turning the robot. In addition, we wanted the robot to be low to the ground with a large wedge to deflect attacks and to get underneath other robots so that our weapon could deliver damaging uppercuts</p>         
+                <p class=dark-grey-text>The chassis was designed with the 3D printing process and strength in mind. The majority of the chassis is printed as a single piece with removeable top panels for access to the insides. The unibody takes advantage of the ability of FDM printing to create complex geometries for our robot's rounded front wedge and sides. Furthermore, it eliminates the need for heavy and weak fasteners, and lends natural rigidity and strength to the part while keeping weight low by designing the chassis as one continuous piece, and by taking advantage of the partially-hollow sturcture of 3D prints, concentrating most material at the surface where stress is greatest.</p>
+                <p class=dark-grey-text>In order to optimize chassis strength, we took into account the anisotropic nature of 3D printing. We expected the majority of attacks to come from the sides of the chassis. Therefore, we designed the part to be printed with the bottom of the chassis on the printer's build plate, eliminating the need for support material, and orienting the layers in a desireable way so that most impact forces would lie within the plane of the layers to avoid any tension or bending which could split the layers apart.</p>
+                <p class=dark-grey-text>Further considerations were taken for the weapon mounts. We expected very large reaction forces from our weapon hits, and wanted to ensure our robot could survive the damge that it dished out. They were designed as separate pieces which were printed on their side in order to keep the forces within the plane of the 3D printed layers. Furthermore, they served a purpose similar to a car roll cage for the weapon: the structure would prevent the weapon from touching the ground when the robot tipped over (which it often did!)</p>
+            </div>
+            <div style="width:50%;float:left">            
+                <img src="images/1lb chassis and motor mounts.png" style="width:90%; float:center" alt="" class="materialboxed">
+                <center><p class=dark-grey-text><i>Chassis with weapon mounts attached </i></p></center>
+            </div>
+            </div>
+            <div class="divider"></div>
+            <h3>Weapon</h3>
+            <div style="width:35%;float:left">            
+                <img src="images/1lb weapon no mount.png" style="width:90%; float:center" alt="" class="materialboxed">
+                <center><p class=dark-grey-text><i>Weapon Assembly</i></p></center>
+            </div>
+            <div style="width:65%;float:left">            
+                <p class=dark-grey-text>The robot's weapon is a vertical spinner: Using a high power brushless motor, it spins a rotating mass extremely quickly, and unloads its rotational energy into other robots upon impact.</p>
+                <p class=dark-grey-text>Due to the rules of our competition, 50% of our weapon by mass must be constructed out of 3D printed material, and because of the high impact forces the weapon would face, durability was again a top priority. By printing the weapon on it's side, we once again ensured most of the expected reaction forces from our hits would lie within the plans of the layers, to prevent any bending loads from separating layers. </p>
+                <p class=dark-grey-text>The weapon is designed with a thick 3D printed body for durability, but much of the weight and damage comes from screws embedded at the ends of the weapon. These screws act as hard impactors that ensure solid hits against other robots, and also significantly add to the mass and moment of inertia of the weapon, increasing the kinetic energy which can be stored within the weapon.</p>
+                <p class=dark-grey-text>Finally, the latest version of the weapon features an asymmetric design. The center of mass is still balanced upon the axis of rotation, but one end is longer than the other. This ensures that we have larger "bite" compared to a two toothed weapon as the single long end must complete a whole revolution until it strikes our opponoent, meaning that it will reach "further" in for each hit (This is a similar relationship to chipload and cutting RPM when machining)</p>
+            </div>
+
+
+
+        </div>
+
+
+
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="black-text">Matthew Zhang</h5>
+                    <p class="grey-text text-darken-3">University of Illinois at Urbana Champaign<br>
+                        Class of 2024 <br>
+                        Mechanical Engineering
+                    </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="black-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-darken-2" href="https://www.linkedin.com/in/matthew-zhang-5b26961b0/" target="_blank">LinkedIn</a></li>
+                        <li><a class="grey-text text-darken-2" href="https://github.com/mjzhang4" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey-text">
+            <div class="container">
+                © Matthew Z 2020
+            </div>
+        </div>
+    </footer>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+</html>
