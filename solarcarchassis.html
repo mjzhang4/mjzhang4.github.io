@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.sidenav').sidenav();
+            $('.parallax').parallax();
+            $('.materialboxed').materialbox();
+        });
+    </script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Matthew's Site</title>
+</head>
+
+    
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo left black-text">Matthew Zhang</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons grey-text">menu</i></a>
+
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="active"><a href="projects.html">Projects</a></li>
+                <li><a href="resume.pdf">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="active"><a href="projects.html">Projects</a></li>
+        <li><a href="resume.pdf">Resume</a></li>
+    </ul>
+    <main>
+
+        <div class="padded-text">
+            <h1>Composite Solar Vehicle Chassis</h1>
+
+            <p class="larger"> As the current Mechanical Lead of the Illini Solar Car team, I oversee many high-level decisions regarding the vehicle, but the component that I worked most on was the composite chassis for our upcoming vehicle. <br> <br> Stiffness, strength, and low weight are the critical driving constraints for this chassis. An efficient solar car is as light as possible, but needs to be stiff enough to support its own weight and any dynamic loads imparted by the suspension, and strong enough to keep the driver safe in an accident.<br><br>
+                <strong> I designed our upcoming vehicle's structural chassis. A key feature is the a unique single-piece carbon fiber monocoque construction commonly seen in F1 cars, with various carbon fiber sandwich panels which support the auxilary components of the vehicle.</strong>
+            </p>
+            <center> <img src="images/projectcchassiscad.png" style="width:70%" alt="" class="materialboxed"> </center>
+            <center><p class=dark-grey-text><i>Siemens NX CAD model of the structure within the car. </i></p></center>
+            <p class="larger">
+                I am currently still working on the design and soon going to be running some FEA static structural analysis on the chassis, so I hope to update the page soon when I have more work to show off!
+            </p>
+ 
+
+
+          
+            <h2>Image Gallery</h2>
+            <h4>Monocoque</h4>
+            <center><img src="images/monocoque.png" style="width:70%" alt="" class = "materialboxed"></center>
+            <center><p class=dark-grey-text style="width:70%"><i>Single-piece carbon fiber monocoque. All critical components of the vehicle such as suspension, and chassis panels connect to this central rigid structure, in which the driver also sits. </i></p></center>
+            <p>
+            As mentioned earlier, the monocoque is the key feature of my chassis design.
+            </p>
+            <p>
+                The monocoque is constructed as one single piece on top of a large mold. The material is a laminate structure made of layers of carbon fiber sandwiching a hollow aluminum honeycomb core. This aluminum honeycomb core lends greatly increased stiffness to the structure by separating the rigid carbon fiber "skin" like an I beam.
+            </p>
+            <p>
+                The design of this structure also takes advantage of the molded geometry, allowing complex curves and shapes. The entire monocoque is designed with generous fillet radii in order to minimize stress concentration and better distribute stress throughout the structure. Careful thought is also put into shape of the structure to increase stiffness and also ensure it is manufacturable via the molding process and can be demolded. A draft angle on the structure helps with demolding specifically. A flange is also added around the driver region to increase stiffness and prevent "caving-in" of the structure. 
+            </p>    
+        </div>
+
+
+
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="black-text">Matthew Zhang</h5>
+                    <p class="grey-text text-darken-3">University of Illinois at Urbana Champaign<br>
+                        Class of 2024 <br>
+                        Mechanical Engineering
+                    </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="black-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-darken-2" href="https://www.linkedin.com/in/matthew-zhang-5b26961b0/" target="_blank">LinkedIn</a></li>
+                        <li><a class="grey-text text-darken-2" href="https://github.com/mjzhang4" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey-text">
+            <div class="container">
+                © Matthew Z 2020
+            </div>
+        </div>
+    </footer>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+</html>

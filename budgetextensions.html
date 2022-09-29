@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.sidenav').sidenav();
+            $('.parallax').parallax();
+            $('.materialboxed').materialbox();
+        });
+    </script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Matthew's Site</title>
+</head>
+
+    
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo left black-text">Matthew Zhang</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons grey-text">menu</i></a>
+
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="active"><a href="projects.html">Projects</a></li>
+                <li><a href="resume.pdf">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="active"><a href="projects.html">Projects</a></li>
+        <li><a href="resume.pdf">Resume</a></li>
+    </ul>
+    <main>
+
+        <div class="padded-text">
+            <h1>Budget Extensions - 30lb Combat Robot</h1>
+            <p class="larger"> In my second year in the UIUC iRobotics club, we set out to design a robot with the goal of having a huge spinning weapon on top. <strong> We designed a 30lb "Featherweight" class combat robot with a large 20" overhead blade. As the chassis lead on the team, I led discussions involving overall robot-architechture questions and designed and manufactured much of the robot.</strong> 
+            </p>
+ 
+
+            <div style="width:50%;float:left">            
+                <img src="images/budgetextensionsrender.jpg" style="width:100%" alt="" class="materialboxed">
+                <center><p class=dark-grey-text><i>CAD rendering of the robot</i></p></center>
+            </div>
+            <div style="width:50%;float:left">            
+                <img src="images/budgetextensionscad.png" style="width:100%" alt="" class = "materialboxed">
+                <center><p class=dark-grey-text><i>CAD model of the robot</i></p></center>
+            </div>
+          
+            <center>
+                <iframe width="890" height="500" src="https://www.youtube.com/embed/4f1iWTX_qns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </center>
+            <center>
+                <p class=dark-grey-text><i>A slightly terrifying spin-up test of our weapon</i></p> 
+            </center>
+            <h2>Image Gallery</h2>
+            <h4>Design and Analysis</h4>
+            <center><img src="images/budgetextensionsfea.png" style="width:70%" alt="" class = "materialboxed"></center>
+            <center><p class=dark-grey-text><i>Preliminary static structural analysis of weapon design to identify potential stress risers</i></p></center>
+            <center><img src="images/budgetextensionsstack.jpg" style="width:70%" alt="" class = "materialboxed"></center>
+            <center><p class=dark-grey-text><i>Weapon-Pulley-Bearing-Shaft stack-up cross section which I designed</i></p></center>
+            <center><img src="images/budgetextensionscad.png" style="width:70%" alt="" class = "materialboxed"></center>
+            <center><p class=dark-grey-text><i>CAD model of the robot</i></p></center>
+            <h4>Manufacturing</h4>
+            <center><img src="images/matthewlathe.jpg" style="width:70%" alt="" class = "materialboxed"></center>
+            <center><p class=dark-grey-text><i>Me turning the wheels of a lathe to manufacture a supporting mount for our weapon shaft.</i></p></center>
+            <center><img src="images/machinedpulley.jpg" style="width:55%" alt="" class = "materialboxed"></center>
+            <center><p class=dark-grey-text><i>Timing belt pulley that I manufactured via a initial waterjetting process followed by turning and boring using the lathe.</i></p></center>
+            <h4>Construction</h4>
+            <center><img src="images/budgetextensionsplates.jpg" style="width:70%" alt="" class = "materialboxed"></center>
+            <center><p class=dark-grey-text><i>The plates of the robot assembled for fit-testing after waterjetting</i></p></center>
+            <center><img src="images/budgetextensionselectronics.jpg" style="width:70%" alt="" class = "materialboxed"></center>
+            <center><p class=dark-grey-text><i>Assembled internals with electrical components and wiring harnesses</i></p></center>
+            <center><img src="images/budgetextensionspic.jpg" style="width:70%" alt="" class = "materialboxed"></center>
+            <center><p class=dark-grey-text><i>The full robot assembled</i></p></center>
+            <h4>Fights</h4>
+            <center><iframe width="800" height="500" src="https://www.youtube.com/embed/-2n7SChZ6Vk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+            <center><p class=dark-grey-text><i>Our first match where we destroyed the opposing robot's weapon</i></p></center>
+            <center><iframe width="800" height="500" src="https://www.youtube.com/embed/Q5xTGU1T9qA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+            <center><p class=dark-grey-text><i>A viscous second fight ending in an unfortunate battery fire</i></p></center>
+
+        </div>
+
+
+
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="black-text">Matthew Zhang</h5>
+                    <p class="grey-text text-darken-3">University of Illinois at Urbana Champaign<br>
+                        Class of 2024 <br>
+                        Mechanical Engineering
+                    </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="black-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-darken-2" href="https://www.linkedin.com/in/matthew-zhang-5b26961b0/" target="_blank">LinkedIn</a></li>
+                        <li><a class="grey-text text-darken-2" href="https://github.com/mjzhang4" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey-text">
+            <div class="container">
+                © Matthew Z 2020
+            </div>
+        </div>
+    </footer>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+</html>
