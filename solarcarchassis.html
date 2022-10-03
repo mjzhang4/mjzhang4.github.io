@@ -54,14 +54,10 @@
             <center> <img src="images/projectcchassiscad.png" style="width:70%" alt="" class="materialboxed"> </center>
             <center><p class=dark-grey-text><i>Siemens NX CAD model of the structure within the car. </i></p></center>
             <p class="larger">
-                I am currently still working on the design and soon going to be running some FEA static structural analysis on the chassis, so I hope to update the page soon when I have more work to show off!
+                I am currently still working on the design and soon going to be running more FEA static structural analysis on the chassis and improving the design, so I hope to update the page soon when I have more work to show off!
             </p>
- 
-
-
-          
-            <h2>Image Gallery</h2>
-            <h4>Monocoque</h4>
+            <h3>Monocoque</h3>
+            <h4>Design</h4>
             <center><img src="images/monocoque.png" style="width:70%" alt="" class = "materialboxed"></center>
             <center><p class=dark-grey-text style="width:70%"><i>Single-piece carbon fiber monocoque. All critical components of the vehicle such as suspension, and chassis panels connect to this central rigid structure, in which the driver also sits. </i></p></center>
             <p>
@@ -73,6 +69,30 @@
             <p>
                 The design of this structure also takes advantage of the molded geometry, allowing complex curves and shapes. The entire monocoque is designed with generous fillet radii in order to minimize stress concentration and better distribute stress throughout the structure. Careful thought is also put into shape of the structure to increase stiffness and also ensure it is manufacturable via the molding process and can be demolded. A draft angle on the structure helps with demolding specifically. A flange is also added around the driver region to increase stiffness and prevent "caving-in" of the structure. 
             </p>    
+            <h4>Analysis</h4>
+            <p>
+                In order to pass regulations, our vehicle's structure must pass certain loading scenarios. One example is shown below, in which a "5g load" (5x the weight of the vehicle) is applied to the side next to the driver. 
+            </p>    
+            <p>
+                To generate valid analysis results which would be applicable to reality, I utilized the Ansys Composite PrepPost (ACP) tool in order to properly define the fiber directions, plys, and laminate stackups which we would constuct the monocoque out of.   
+            </p> 
+            <p>
+                I am still in the progress of running more in-depth analysis, but from this first preliminary analysis, it reveals that there are high stresses at the bottom of the monocoque, and there is also a stress concentration near the front of the driver cut-out. The stress near the bottom is important to note, as the bottom is bonded to the monocoque, since it cannot be molded all as one piece. It will be critical to have a solid glue bond for the bottom for its construction.
+            </p>   
+            <p>
+                Our team will also be looking into collecting material properties such as ultimate strength and elastic modulus specifically for composite materials that we create. This is important, as composite strength can depend heavily on manufacturing process, so we need to validate the model by using accurate material properties from our own testing.
+            </p>  
+
+
+            <div style="width:50%;float:left">            
+                <img src="images/monocoquesideloading.png" style="width:100%" alt="" class="materialboxed">
+                <center><p class=dark-grey-text><i>Monocoque side-loading setup</i></p></center>
+            </div>
+            <div style="width:50%;float:left">            
+                <img src="images/monocoquesideloadingressult.png" style="width:100%" alt="" class="materialboxed">
+                <center><p class=dark-grey-text><i>Von-Mises stress plot of applied load</i></p></center>
+            </div>
+
         </div>
 
 
