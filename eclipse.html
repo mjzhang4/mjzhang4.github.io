@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.sidenav').sidenav();
+            $('.parallax').parallax();
+            $('.materialboxed').materialbox();
+        });
+    </script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Matthew's Site</title>
+</head>
+
+    
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo left black-text">Matthew Zhang</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons grey-text">menu</i></a>
+
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="active"><a href="projects.html">Projects</a></li>
+                <li><a href="resume.pdf">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="active"><a href="projects.html">Projects</a></li>
+        <li><a href="resume.pdf">Resume</a></li>
+    </ul>
+    <main>
+
+        <div class="padded-text">
+            <h1>Eclipse/Moonshot - 1lb Combat Robot</h1>
+            <p class="larger"> Eclipse is my 1lb combat robot designed to compete at UIUC's 3D printed 1lb weight class as well as hobbyist competitions allowing any material (where it is referred to as "Moonshot" to avoid confusion).  <strong>I designed Eclipse, a combat robot with a vertically spinning drum and a custom-made brushless motor drive system.</strong> Its defining feature is that rather than using an off the shelf motor and gearbox combo, the robot utilizes a custom gear and pulley reduction which integrates into the frame of the robot with a high-power motor to achieve a uniquely zippy and powerful drivetrain. 
+            </p>
+ 
+
+            <div style="width:50%;float:left">            
+                <img src="images/eclipse.png" style="width:100%" alt="" class="materialboxed">
+                <center><p class=dark-grey-text><i>CAD model of Eclipse in its full-combat configuration (Moonshot)</i></p></center>
+            </div>
+            <div style="width:50%;float:left">            
+                <img src="images/eclipseplastic.jpg" style="width:100%" alt="" class = "materialboxed">
+                <center><p class=dark-grey-text><i>Eclipse in its configuration for plastic 1lb competitions</i></p></center>
+            </div>
+          
+            <center>
+                <iframe width="890" height="500" src="https://www.youtube.com/embed/lMxwY7Oqpcw?si=5P8qsQ4uLEMoL_me" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </center>
+            <center>
+                <p class=dark-grey-text><i>A compilation of my fights at a recent tournament. Moonshot placed 7th out of 32 bots.</i></p> 
+            </center>
+
+
+            
+
+            <h2>Design Narrative</h2>
+            <h4>Drive</h4>
+            <p>Eclipse makes use of a 2004 sized drone motor with a custom 6.1:1 two-stage reduction used to reduce the high-speed output to a higher torque output at the wheels.
+            The 1st reduction stage utilizes a 3D printed pinion gear which can achieve a more compact reduction compared to a belt reduction. From then on, belts are used to transfer power allowing for more freedom in placement of the components. Small wheels also helped to reduce the package size.
+            </p>
+            <center><img src="images/eclipsetransparent.png" style="width:70%" alt="" class = "materialboxed"></center>
+            <center><p class=dark-grey-text><i>Robot with its chassis transparent to show drive system.</i></p></center>
+            <p>A driving design constraint was size. The reduction had to be packed into a small enough package in order to keep the size of the frame down, saving weight. Using pinions that were as small as possible, and making smart use of solidworks sketches allowed me to position the components and choose pulley, gear and belt sizes to reduce the overall footprint of the gearing.
+            A previous iteration of this robot was very overweight and fragile due to improper size constraints, so this was a critical item to get right. (Scroll down below for this previous iteration)
+            </p>
+            <p>
+
+            In choosing drive electronics, I proritized finding low "Kv" motors which would have a low speed and produce high torque from low current so that the required gearing would be less. In addition, they should be lightweight and be in a suitable package to fit well into the robot. Yet, they needed to be plenty powerful: I had decided this robot's gimmick would be its overwhelming drive power. The 2004 drone motors I found were the best option that would fit the bill. Coming in at only ~16g and outputting several hundred watts, they certainly did the job.
+            </p>
+            <h4>Weapon</h4>
+            </p>
+            <div style="width:50%;float:left">            
+                <img src="images/eclipsemetalweapon.png" style="width:100%" alt="" class="materialboxed">
+                <center><p class=dark-grey-text><i>Moonshot's 7075 Aluminum weapon</i></p></center>
+            </div>
+            <div style="width:50%;float:left">            
+                <img src="images/eclipseweaponsection.png" style="width:100%" alt="" class = "materialboxed">
+                <center><p class=dark-grey-text><i>A section view of the weapon system</i></p></center>
+            </div>
+            <p>
+            For the weapon system, I went with a "drum" or "egg-beater" spinner design. This consists of a wide vertically spinning hunk of material that hits other robots upwards. Its width allows the driver to be somewhat imprecise with the aim of the weapon.
+            </p>
+        
+            <p>
+            The weapon body is made from 7075 Aluminum for additional hardness and stiffness, and alloy steel flat-head screws are used as hard impactors for striking other robots. The weapon is constructed with an aluminum inner body with screw impactors to facilite ease of manufacturing and help reduce costs. Ideally a weapon could be made and machined completely out of a steel-billet and then hardened, but it would cost quite a bit!
+            </p>
+
+            <div style="width:50%;float:left">            
+                <img src="images/eclipsemachining.jpg" style="width:100%" alt="" class="materialboxed">
+                <center><p class=dark-grey-text><i>Manual milling the weapon</i></p></center>
+            </div>
+            <div style="width:50%;float:left">            
+                <img src="images/eclipsemachined.jpg" style="width:100%" alt="" class = "materialboxed">
+                <center><p class=dark-grey-text><i>Finished Product!</i></p></center>
+            </div>
+
+            <p>
+                As an exercise in improving my machining skills, I milled the first iteration of the weapon on our school's bridgeport mill over 6 grueling hours. Knowing the requirements for my part, I could set up my machining operations and tolerances such that I could ensure that critical tolerances were hit. Having a metal weapon to show off at competitions which I had machined was a rewarding experience, but after seeing how little I could buy a weapon CNC machined overseas, I had my next iterations made that way.
+            </p>
+            <h4>Armor + Chassis</h4>
+            <p>
+            The chassis on the robot features a center section constructed of 3 interlocking pieces: A center-body, and two upright supports that that slot in. The chassis is constructed in multiple parts to facilitate better 3D-printing of the frame, and to optimally orient layer lines so that a crack cannot propogate through layer lines and crack an upright.
+            </p>
+            <center><img src="images/eclipsechassis.png" style="width:70%" alt="" class = "materialboxed"></center>
+            <p>
+            As for materials, the chassis is made from CoPA nylon which has excellent impact resistance for a 3D printed material, and it is further treated after printing by boiling the material which hydrates and anneals the nylon, greatly increasing its toughness.
+            The side wheel-guard armor pieces are not critical for the structure, and so they are made from TPU, a flexible 3D printed material which is incredibly resilient to impacts and squishes and deforms to absorb the shock of weapon impacts.
+            </p>
+
+            <h4>Design Iterations</h4>
+            <p>
+            In order to get to the current refined design of Eclipse/Moonshot, there were previous iterations which were built and that I learned from. Most notably, the original version of the design took on a very different form. The robot was much larger than the current iteration, and had to be printed with very thin walls in order to make weight. This was the critical issue with this design, I had not put enough work into optimizing the size of the robot, and as a result it was incredibly fragile.
+            </p>
+
+            <div style="width:50%;float:left">            
+                <img src="images/eclipse1.jpg" style="width:100%" alt="" class="materialboxed">
+                <center><p class=dark-grey-text><i>The constructed v1 prototype of Eclipse</i></p></center>
+            </div>
+            <div style="width:50%;float:left">            
+                <img src="images/eclipse1rip.jpg" style="width:100%" alt="" class = "materialboxed">
+                <center><p class=dark-grey-text><i>Eclipse after it took a big hit in a match and was ripped in half</i></p></center>
+            </div>
+            <p>
+            This design did not perform spectacularly, but I gained some important information. I learned that decreasing the size would be necessary for success. And also importantly, I had learned much more about what gear ratio would be required, and more about the maximum torque and power that the motors I supplied could output. The robot was very twitchy and not super responsive, meaning I probably needed a touch more torque than I currently had, but the robot drive around without overworking its motors, so I knew I was at least in the correct ballpark. In the second iteration, I knew I had to shoot for a slightly higher reduction than what I had, but I was not off by much.
+            </p>
+            <h4>Results</h4>
+            <center><img src="images/eclipsedriving.gif" style="width:70%" alt="" class = "materialboxed"></center>
+            <center><p class=dark-grey-text><i>Some test driving on my apartment floor, showing off impressive drive speed</i></p></center>
+
+            <center><img src="images/eclipsesecond.jpg" style="width:70%" alt="" class = "materialboxed"></center>
+            <center><p class=dark-grey-text><i>Second Place!</i></p></center>
+
+
+        </div>
+
+
+
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="black-text">Matthew Zhang</h5>
+                    <p class="grey-text text-darken-3">University of Illinois at Urbana Champaign<br>
+                        Class of 2024 <br>
+                        Mechanical Engineering
+                    </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="black-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-darken-2" href="https://www.linkedin.com/in/matthew-zhang-5b26961b0/" target="_blank">LinkedIn</a></li>
+                        <li><a class="grey-text text-darken-2" href="https://github.com/mjzhang4" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey-text">
+            <div class="container">
+                © Matthew Z 2020
+            </div>
+        </div>
+    </footer>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+</html>
